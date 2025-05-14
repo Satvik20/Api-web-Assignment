@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country and Weather Information</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+</head>
+<body>
+    <!-- Select type and search input and search button container and display country list with the flag  -->
+    <div class="container">
+        <h1>Country and Weather Information</h1>
+        <div class="search">
+            <select id="search-type">
+                <option value="name">Country Name</option>
+                <option value="capital">Capital</option>
+                <option value="currency">Currency</option>
+                <option value="language">Language</option>
+            </select>
+            <input type="text" id="search-input" placeholder="Please Fill in this Field">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="country-info"></div>
+        <canvas id="weather-chart"></canvas>
+        <div id="error-message" class="error-message"></div>
+    </div>
+    <!-- Display Modal with country details and weather data chart as u pick the selected country -->
+    <div class="modal" id="country-modal">x
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modal-country-info"></div>
+            <canvas id="modal-weather-chart"></canvas>
+        </div>
+    </div>
+    <script src="../js/scripts.js"></script>
+    <!-- Footer Information -->
+    <footer style="text-align: center;">
+        <p>2024 NAGASAI (A00316625) | Software Design with AI and Cloud Computing | TUS Athlone</p>
+    </footer>
+</body>
+</html>
