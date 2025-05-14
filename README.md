@@ -23,7 +23,7 @@ Basic understanding of JavaScript and APIs
 //Installation//
 
 # Clone the repository
-git clone https://github.com/yourusername/API-Web-Assignment.git
+git clone https://github.com/Satvik20/API-Web-Assignment.git
 
 # Navigate to the project directory
 cd API-Web-Assignment
